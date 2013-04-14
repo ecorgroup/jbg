@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Nobile);
 @font-face {
   font-family: 'Alfa Slab One';
   font-style: normal;
@@ -5,19 +6,26 @@
   src: local('Alfa Slab One'), local('AlfaSlabOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/alfaslabone/v2/Qx6FPcitRwTC_k88tLPc-fn8qdNnd5eCmWXua5W-n7c.woff) format('woff');
 }
 
+.hidden {
+  display: none;
+  height: 0;
+  width: 0;
+}
 
 body {
   padding:50px;
   font:14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
+  color:#AAA;
   font-weight:300;
   background: #332623;
-  background-image: url(../images/assault.png)
+  background-image: url(../images/assault.png);
+  font-family: 'Nobile', Arial, sans-serif;
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
-  margin:0 0 20px;
+  margin:0 0 16px;
 }
 
 p, ul, ol, table, pre, dl {
@@ -219,8 +227,12 @@ footer {
   height: 100%;
 }
 
-.inner-stitch h3 {
-  font-size: 2.6em;
+.inner-stitch h1,
+.inner-stitch h2,
+.inner-stitch h3,
+.inner-stitch h4,
+.inner-stitch h5,
+.inner-stitch h6 {
   font-family: 'Alfa Slab One';
   color: rgba(0, 0, 0, 0.53);
   text-shadow: 0 1px 3px rgba(171, 128, 112, 0.5) , 0 -2px 4px rgba(5, 8, 2, 0.5);

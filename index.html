@@ -22,23 +22,80 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+      function toggle(){
+        console.dir(document.getElementById('demo'));
+        if (document.getElementById('demo').className == 'hidden'){
+          document.getElementById('demo').setAttribute('class','');
+          document.getElementById('demo2').setAttribute('class','hidden');
+        } else {
+          document.getElementById('demo').setAttribute('class','hidden');
+          document.getElementById('demo2').setAttribute('class','');
+        }
+        console.dir(document.getElementById('demo'));
+      }
+    </script>
   </head>
   <body>
     <div class="wrapper">
       <header>
-        Header
-      </header>
-      <section>
         <div class="leather">
-        <img src="images/jeff.png" class="profilepic"/>
+          <div id="demo2">
+          <img src="images/jeff.png" class="profilepic"/>
           <div class="inner-stitch" style="padding: 25px 0 0 0;margin: 12px -1px 0 0;">
-            <h3>Jeff Beasley</h3>
+            <h1>Jeff Beasley</h1>
+          </div>
+          </div>
+          <div class="inner-stitch" style="padding: 25px 0 0 0;margin: 12px -1px 0 0;">
+            <h3>Gear</h3>
+            <a href="http://www.sierraguitars.net/artists.cfm?Jeff%20Beasley#Jeff Beasley" target="_blank">
+              <img src="images/sierra.gif" height="60"/>
+            </a>
+            <a href="http://www.daddario.com/DaddarioArtistDetails.Page?ActiveID=3777&ArtistId=40209&tid=0" target="_blank">
+              <img src="images/daddario.png"/>
+            </a>
+            <a href="http://procosound.com/news/79-pro-co-connects-with-jeff-beasley-3310" target="_blank">
+              <img src="images/proco.png" height="60"/>
+            </a>
+            <!--<a href="http://www.deanguitars.com/jeffbeasley.php" target="_blank">
+              <img src="images/dean.png" height="60"/>
+            </a>-->
           </div>
         </div>
+        <div style="padding: 25px 0 0 0;margin: 12px; text-align:center;">
+          <a href="http://www.twitter.com/jeffbeasley " target="_blank"><img src="images/twitter.png"/></a>
+          <a href="http://www.facebook.com/#!/profile.php?id=1267242840" target="_blank"><img src="images/facebook.png"/></a>
+          <a href="http://www.myspace.com/jeffbeasleyguitar/" target="_blank"><img src="images/myspace.png"/></a>
+        </div>
+        <a href="javascript:toggle();">Demo</a>
+      </header>
+      <section>
+        <div class="hidden" id="demo">
+        <div class="leather">
+          <img src="images/jeff.png" class="profilepic"/>
+          <div class="inner-stitch" style="padding: 25px 0 0 0;margin: 12px -1px 0 0;">
+            <h1>Jeff Beasley</h1>
+          </div>
+        </div>
+        </div>
+        <br/>
+        <p>
+          Jeff Beasley holds B.A. degrees in Music and Classical Guitar, is a prolific educator, top
+          columnist, popular workshop and clinic instructor, and writes the highly popular "Lethal Guitar"
+          column for Premier Guitar Magazine. Jeff has worked with some of the biggest names in shred
+          guitar, he tours nationally and is a senior faculty member with the National Guitar Workshop.
+        </p>
+        <p>
+          Jeff also records instructional videos for Truefire, where his videos are always in the top
+          sellers. Jeff has appeared in Guitarist Network Magazine, Guitar For The Practicing Musician,
+          Guitar Player, Music For The World, Music and Arts, Musicians Hotline, and Premier Guitar
+          Magazine. Jeff has 32 years experience in studio, teaching and performance, his debut CD
+          "Tiebreaker" showcases his awesome guitar skills. Tiebreaker includes special guests Atma
+          Anur (Jason Becker, Tony MacAlpine) and Doug Doppler (Favored Nations, Joe Satriani).
+        </p>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/ecorgroup">ecorgroup</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p><small>Copyright &copy; 2013 Jeff Beasley.<br/>All Rights Reserved.</small></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
