@@ -22,30 +22,11 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script type="text/javascript">
-      function toggle(){
-        console.dir(document.getElementById('demo'));
-        if (document.getElementById('demo').className == 'hidden'){
-          document.getElementById('demo').setAttribute('class','');
-          document.getElementById('demo2').setAttribute('class','hidden');
-        } else {
-          document.getElementById('demo').setAttribute('class','hidden');
-          document.getElementById('demo2').setAttribute('class','');
-        }
-        console.dir(document.getElementById('demo'));
-      }
-    </script>
   </head>
   <body>
     <div class="wrapper">
       <header>
         <div class="leather">
-          <div id="demo2">
-            <img src="images/jeff.png" class="profilepic"/>
-            <div class="inner-stitch" style="padding: 25px 0 0 0;margin: 12px -1px 0 0;">
-              <h1>Jeff Beasley</h1>
-            </div>
-          </div>
           <div class="inner-stitch" style="padding: 25px 0 0 0;margin: 12px -1px 0 0;">
             <h3>Endorses:</h3>
             <a href="http://www.truefire.com" target="_blank">
@@ -71,18 +52,8 @@
           <a href="http://www.facebook.com/#!/profile.php?id=1267242840" target="_blank"><img src="images/facebook.png"/></a>
           <a href="http://www.myspace.com/jeffbeasleyguitar/" target="_blank"><img src="images/myspace.png"/></a>
         </div>
-        <a href="javascript:toggle();">Demo</a>
       </header>
       <section>
-        <div class="hidden" id="demo">
-        <div class="leather">
-          <img src="images/jeff.png" class="profilepic"/>
-          <div class="inner-stitch" style="padding: 25px 0 0 0;margin: 12px -1px 0 0;">
-            <h1>Jeff Beasley</h1>
-          </div>
-        </div>
-        </div>
-        <br/>
         <p>
           Jeff Beasley holds degrees in Music and Classical Guitar, is a prolific educator, popular workshop and
           clinic instructor, and former columnist for Premier Guitar magazine. Jeff has worked with some of the
