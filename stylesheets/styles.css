@@ -199,6 +199,44 @@ footer {
   bottom:10px;
 }
 
+.quotes blockquote:first-child {
+  border: 0px !important;
+  margin-top: 0px !important;
+}
+
+blockquote {
+  border: 0px;
+  padding: 26px 16px 0 16px;
+  margin: 86px 0 22px 0 !important;
+  clear: both !important;
+  font-family: Nobile, Arial, sans-serif;
+  font-style: normal !important;
+  border-top: 1px dotted #222222;
+  background-image: url(../images/laquo.png);
+  background-repeat: no-repeat;
+  background-position: 0px 24px;
+  display: block;
+}
+
+blockquote p:after {
+  content: '.....';
+  color: transparent;
+  background-image: url('../images/raquo.png');
+  background-repeat: no-repeat;
+  padding: 4px 8px 0px 8px;
+}
+
+blockquote cite {
+  float: right;
+  display: block;
+  clear: both !important;
+  font-style: normal !important;
+  text-align: right;
+  margin-top: 22px;
+  font-family: 'Alfa Slab One';
+  font-size: smaller;
+}
+
 .profilepic {
   outline: 1px dashed rgba(171, 128, 112, 0.7);
   border: 1px dashed #000000;
