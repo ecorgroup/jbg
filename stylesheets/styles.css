@@ -13,7 +13,7 @@
 }
 
 body {
-  padding: 20px;
+  padding: 20px 10px 40px 10px;
   font:14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#AAA;
   font-weight:300;
@@ -197,6 +197,7 @@ footer {
   float:left;
   position:fixed;
   bottom:10px;
+  clear: both;
 }
 
 .quotes blockquote:first-child {
