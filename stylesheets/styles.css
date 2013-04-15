@@ -206,15 +206,12 @@ footer {
 
 blockquote {
   border: 0px;
-  padding: 26px 16px 0 16px;
+  padding: 26px 6px 0 0px;
   margin: 86px 0 22px 0 !important;
   clear: both !important;
   font-family: Nobile, Arial, sans-serif;
   font-style: normal !important;
   border-top: 1px dotted #222222;
-  background-image: url(../images/laquo.png);
-  background-repeat: no-repeat;
-  background-position: 0px 24px;
   display: block;
 }
 
@@ -223,7 +220,16 @@ blockquote p:after {
   color: transparent;
   background-image: url('../images/raquo.png');
   background-repeat: no-repeat;
-  padding: 4px 8px 0px 8px;
+  background-position: 4px 0;
+  padding: 5px 0px 0px 0px !important;
+}
+
+blockquote p:before {
+  content: '...';
+  color: transparent;
+  background-image: url(../images/laquo.png);
+  background-repeat: no-repeat;
+  padding: 5px 0px 0px 8px;
 }
 
 blockquote cite {
